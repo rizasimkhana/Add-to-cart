@@ -25,7 +25,7 @@ function Cart({ cartItems, removeFromCart, updateQuantity }) {
             <li key={index} className="flex justify-between items-center mb-4">
               <div>
                 <img src={item.image} className="w-16 h-auto"></img>
-                <h3 className="font-bold">{item.name}</h3>
+                <h3 className="font-bold">{item.title}</h3>
                 <p>Quantity: {item.quantity}</p>
                 <p>Total: ${(item.quantity * item.price).toFixed(2)}</p>
               </div>

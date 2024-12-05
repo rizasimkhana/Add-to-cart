@@ -14,9 +14,9 @@ function ProductCard({ product, addToCart }) {
 
     <div className="border p-4 m-2 rounded-lg shadow-lg place-content-center">
       <img src={product.image} alt={product.name} className="w-1/2 h-48 rounded-t-lg" />
-      <h2 className="text-xl mt-2">{product.name}</h2>
-      <p className="text-gray-600 text-xs">{product.description}</p>
-      <p className="text-green-500 font-bold">${product.price}</p>
+      <h2 className="text-2xl mt-4">{product.title}</h2>
+      <p className="text-gray-600 text-xs mt-4">{product.description}</p>
+      <p className="text-green-500 font-bold mt-4">${product.price}</p>
 
       <div className="flex items-center mt-4">
         <button onClick={() => setQuantity(quantity - 1)} className="px-2 py-1 bg-gray-300 rounded-md" disabled={quantity <= 1}>-</button>
