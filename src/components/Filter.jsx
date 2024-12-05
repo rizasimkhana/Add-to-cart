@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Filter({ categories, applyFilter, setSearchQuery }){
+function Filter({ categories, applyFilter, setSearchQuery }) {
   const [selectedCategory, setSelectedCategory] = useState('');
 
   const handleCategoryChange = (event) => {
@@ -32,6 +32,6 @@ function Filter({ categories, applyFilter, setSearchQuery }){
       </div>
     </div>
   )
-  }
+}
 
 export default Filter;

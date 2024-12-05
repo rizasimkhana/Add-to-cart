@@ -1,14 +1,11 @@
 import React from 'react';
-function Cart({ cartItems, removeFromCart, updateQuantity }){
+function Cart({ cartItems, removeFromCart, updateQuantity }) {
 
-    // Function to calculate the total price of the cart
-    const calculateTotal = () => {
-      return cartItems.reduce((total, item) => total + item.price*item.quantity, 0);
-    };
-
-    
-
-      // Function to calculate the discount
+  // Function to calculate the total price of the cart
+  const calculateTotal = () => {
+    return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+  };
+// Function to calculate the discount
   const calculateDiscount = (total) => {
     return total * 0.10; // 10% discount
   };
@@ -58,15 +55,14 @@ function Cart({ cartItems, removeFromCart, updateQuantity }){
         </ul>
       )}
 
-    <h1 className='text-center font-bold text-3xl bg-green-700'>PAY:{calculateFinalPrice()}</h1>
- 
-        
+      <a href="#" className='text-center font-bold text-3xl bg-green-700 cursor-pointer grid place-content-center'>PAY:{calculateFinalPrice()}</a>
+
+
 
     </div>
-    
+
   );
 };
 
 export default Cart;
 
-  

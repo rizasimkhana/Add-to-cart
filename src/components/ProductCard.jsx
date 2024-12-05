@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function  ProductCard({ product, addToCart }){
+function ProductCard({ product, addToCart }) {
   const [quantity, setQuantity] = useState(1);
 
   const handleAddToCart = () => {
@@ -9,10 +9,10 @@ function  ProductCard({ product, addToCart }){
   };
 
   return (
-    
 
 
-<div className="border p-4 m-2 rounded-lg shadow-lg place-content-center">
+
+    <div className="border p-4 m-2 rounded-lg shadow-lg place-content-center">
       <img src={product.image} alt={product.name} className="w-1/2 h-48 rounded-t-lg" />
       <h2 className="text-xl mt-2">{product.name}</h2>
       <p className="text-gray-600 text-base">{product.description}</p>

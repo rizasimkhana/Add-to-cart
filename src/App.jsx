@@ -39,7 +39,7 @@ const App = () => {
       setAlertMessage(`Added  to the cart!`);
     }
 
-    setTimeout(() => setAlertMessage(''),3000);
+    setTimeout(() => setAlertMessage(''), 3000);
   };
 
   const removeFromCart = (productToRemove) => {
