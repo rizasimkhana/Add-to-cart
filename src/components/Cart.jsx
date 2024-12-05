@@ -15,7 +15,7 @@ function Cart({ cartItems, removeFromCart, updateQuantity }){
   const calculateFinalPrice = () => {
     const total = calculateTotal();
     const discount = calculateDiscount(total);
-    return total - discount;
+    return (total - discount).toFixed(2);
   };
   return (
     <div className="p-4">

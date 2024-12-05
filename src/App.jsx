@@ -39,7 +39,7 @@ const App = () => {
       setAlertMessage(`Added  to the cart!`);
     }
 
-    setTimeout(() => setAlertMessage(''), 3000);
+    setTimeout(() => setAlertMessage(''),3000);
   };
 
   const removeFromCart = (productToRemove) => {
@@ -72,7 +72,7 @@ const App = () => {
       <Navbar cartCount={cartCount} />
       <div className="p-4">
         {alertMessage && (
-          <div className="bg-green-500 text-white p-2 rounded-md mb-4">
+          <div className="bg-green-500 text-white p-2 rounded-md mb-4  flex items-center justify-center w-full text-center fixed">
             {alertMessage}
           </div>
         )}
